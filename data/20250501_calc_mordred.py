@@ -12,9 +12,6 @@ def calc_mordred(aqsol_csv: Union[str, os.PathLike]):
     res_df = pd.concat([aqsol_df, mordred_df], axis = 1)
     desc_df = res_df.select_dtypes(['number'])
     desc_df['ID'] = mordred_df['ID']
-    desc_df['Name'] = mordred_df['Name']
-    desc_df['InChI'] = mordred_df['InChI']
-    desc_df['SMILES'] = mordred_df['SMILES']
     desc_df = desc_df.set_index('ID')
     desc_df = desc_df.dropna(axis=0)
     desc_df.to_csv('../data/processed/20250501_aqsol_db_mordred_descs_cleaned.csv')
