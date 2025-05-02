@@ -3,9 +3,14 @@
 
 This repo is meant to be a template/guide to creating simple ANN models using pytorch.  
 Also present is boilerplate config for pre-commit and a pyproject.toml file.  
-  
-To install:
-Fork, then `git clone` the repo.
+
+The task: use an ANN model to predict the aqueous solubility (logS) of chemical compounds. We'll use the AqSol DB (https://github.com/mcsorkun/AqSolDB/tree/master) as a raw data source. Then, we'll calculate 2D descriptors using 
+Mordred (https://github.com/mordred-descriptor/mordred), and use them to train a simple ANN model.  
+
+WARNING: This repo is not meant to be used without modification for research tasks! Several data curation and model validation tasks have been omitted for brevity.  
+
+To install:  
+Fork, then `git clone` the repo.  
 Run `pip install -e .` to install as an editable package.  
 
 This project structure is loosely based on [CCDS](https://cookiecutter-data-science.drivendata.org/).  
