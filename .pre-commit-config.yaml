@@ -14,4 +14,4 @@ repos:
     hooks:
       - id: isort
         name: isort (python)
-exclude: 'README'
+exclude: 'README.md'
