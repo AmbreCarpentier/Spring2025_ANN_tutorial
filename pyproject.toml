@@ -6,5 +6,8 @@ version = "1.0.0"
 requires = ["setuptools"]
 build-backend = "setuptools.build_meta"
 
+[tool.setuptools.dynamic]
++dependencies = { file = ["requirements.txt"] }
+
 [tool.setuptools.packages.find]
 where = ["."]
