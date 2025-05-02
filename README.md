@@ -4,8 +4,8 @@
 This repo is meant to be a template/guide to creating simple ANN models using pytorch.  
 Also present is boilerplate config for pre-commit and a pyproject.toml file.  
   
-To install:
-Fork, then `git clone` the repo.
+To install:  
+Fork, then `git clone` the repo.  
 Run `pip install -e .` to install as an editable package.  
 
 This project structure is loosely based on [CCDS](https://cookiecutter-data-science.drivendata.org/).  
