@@ -1,2 +1,5 @@
 # Data
 /data/processed/aqsol_db_mordred_descs.csv
+
+*/.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
